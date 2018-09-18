@@ -11,8 +11,10 @@
 |
 */
 
+require_once __DIR__ . '/helper.php';
+
 $app = new Illuminate\Foundation\Application(
-    realpath(__DIR__.'/../')
+    realpath(__DIR__ . '/../')
 );
 
 /*

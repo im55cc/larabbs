@@ -1,15 +1,11 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: WBang
- * Date: 18-9-22
- * Time: 8:12
- */
+
 namespace App\Handlers;
+
+use Image;
 
 class ImageUploadHandler
 {
-    // 只允许以下后缀名的图片文件上传
     protected $allowed_ext = ["png", "jpg", "gif", 'jpeg'];
 
     public function save($file, $folder, $file_prefix, $max_width = false)
